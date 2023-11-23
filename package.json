@@ -1,0 +1,25 @@
+{
+  "name": "neo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -r run dev",
+    "start": "pnpm -r run start",
+    "serve": "pnpm build && pnpm start",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "app:dev": "pnpm -F @neo/app run dev",
+    "server:dev": "pnpm -F @neo/server run dev",
+    "all:update": "pnpm -r update -i -L",
+    "clean": "find ./ -name node_modules -type d -exec rm -rf {} +"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6"
+  }
+}
